@@ -1,4 +1,4 @@
-<a href="https://es.wikipedia.org/wiki/C%C3%B3rdoba_(Argentina)"><img src="./images/cordoba_total_poblacion.png" alt="Provincia de Córdoba" width="400px"  align="right"></a>
+<a href="https://es.wikipedia.org/wiki/C%C3%B3rdoba_(Argentina)"><img src="./images/cordoba_total_poblacion.png" alt="Provincia de Córdoba" width="700px"  align="right"></a>
 
 # Densidad Poblacional -- Argentina, Córdoba.
 
