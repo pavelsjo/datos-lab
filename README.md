@@ -1,17 +1,29 @@
-<a href="https://es.wikipedia.org/wiki/C%C3%B3rdoba_(Argentina)"><img src="https://www.google.com/maps/vt/data=WqjHha5gY_p29QR6y3TbrssEr4fOzn-gHlFYtTLNvYjMIHbFsGZ9CwnlacMLB2Y-O3d6BpiCMnPZPYslKxLHL6v6g66y5HZbmszGDF6N_2jtxKcih_j_XHifqmx8-Jh4m3DI_8flv7SZnk6bg_jTn_wM4cI-Y1pnylWnhwk6QfTzOfCQvbaO-DLid8iCAISIXKewba-Vamfo5VZnobjw-Aiak9KXhhiaEzulME9lrvQQhMLlmF6VkzKNYf8ZPl9Frn5yFG8h3y4eFt9b0SMWuBa5vSoR5ES8xuJXZUdo6XR3pU_VEBjylM0wuPhjoA
-" alt="Provincia de Córdoba" width="150px"></a>
+<a href="https://es.wikipedia.org/wiki/C%C3%B3rdoba_(Argentina)"><img src="./images/Screenshot_2018-12-21 JupyterLab.png" alt="Provincia de Córdoba" width="400px"  align="right"></a>
 
-## Densidad Poblacional -- Argentina, Córdoba.
+# Densidad Poblacional -- Argentina, Córdoba.
+
+**Referencia:** [Toda la población del mundo cabe en Argentina](https://medium.com/datos-argentina/toda-la-poblaci%C3%B3n-del-mundo-cabe-en-argentina-215e59353871)
 
 **Objetivo:** Exploración y experimentación con datos.
 
-Para visualizar la distribución de la población de la Provincia de Córdoba, trabajaremos con un [shapefile](https://es.wikipedia.org/wiki/Shapefile) sobre un mapa con los datos del la Argentina es el Instituto Nacional de Estadística y Censos de la República Argentina  [INDEC](https://www.indec.gov.ar/codgeo.asp).
-
+Para visualizar la distribución de la población de la Provincia de Córdoba, trabajaremos con un [shapefile](https://es.wikipedia.org/wiki/Shapefile) sobre un mapa con los datos del Instituto Nacional de Estadística y Censos de la República Argentina [INDEC](https://www.indec.gov.ar/codgeo.asp).
 
  
- ## Datos
+ ## Datos 
+ [Link: Shapefile -- Provincia de Córdoba](https://www.indec.gov.ar/ftp/cuadros/territorio/codgeo/Codgeo_Cordoba_con_datos.zip)
  
- - [Shapefile -- Provincia de Córdoba](https://www.indec.gov.ar/ftp/cuadros/territorio/codgeo/Codgeo_Cordoba_con_datos.zip)
+ Descripción:
+ 
+ - **toponimo_i:** Identificación única propia del archivo
+ - **link:** ID del Radio Censal
+ - **varon:** cantidad de varones en dicho radio censal
+ - **mujer:** cantidad de mujeres en dicho radio censal
+ - **totalpobl:** población total
+ - **hogares:** cantidad total de hogares
+ - **viviendasp:** total de viviendas particulares
+ - **viv_part_h:** total de viviendas particulares habitadas
+ - **geometry:** información geográfica para hacer la visualización del mapa.
+
  
 ## Main Workflow
  
@@ -31,6 +43,17 @@ install.packages("sf")
 
 ### Uso en Python
 
-```Python
-pass
+Este código ha sido probado con Python 3.5, es posible que funcione correctamente con Python 2.7 y otras versionnes anteriores. Los paquetes necesarios para trabajar con este repositorio están listados en [requirements.txt](requirements.txt).
+
+Para instalar los requerimientos en [conda](http://conda.pydata.org), ejecuta la siguiente línea de comandos en la terminal:
+
+
+```
+$ conda install --file requirements.txt
+```
+
+Si quieres crear un entorno aislado ``datos_lab`` con Python 3.5 y todos los paquetes requeridos, ejecuta el siguiente código:
+
+```
+$ conda create -n datos_lab python=3.5 --file requirements.txt
 ```
